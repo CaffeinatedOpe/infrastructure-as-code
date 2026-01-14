@@ -76,6 +76,10 @@
     tailscale
     htop
     kitty
+    openiscsi
+    nfs-utils
+    libnfs
+    bash
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -110,6 +114,8 @@
       role = "server";
       tokenFile = config.sops.secrets.k3s-token.path;
     };
+    openiscsi.enable = true;
+    openiscsi.name = "${config.networking.hostName}";
   };
 
   system.stateVersion = "25.11";
