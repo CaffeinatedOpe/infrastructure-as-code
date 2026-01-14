@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
-  name: podinfo
+  name: cert-manager
 spec:
   interval: 5m0s
   url: oci://quay.io/jetstack/charts/cert-manager
