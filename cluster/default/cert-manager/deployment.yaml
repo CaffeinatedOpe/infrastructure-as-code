@@ -4,10 +4,9 @@ metadata:
   name: cert-manager-deployment
   namespace: cert-manager
 spec:
-  chart:
-      chartRef:
-        kind: OCIRepository
-        name: cert-manager-repo
+  chartRef:
+    kind: OCIRepository
+    name: cert-manager-repo
   values:
     crds:
       enabled: true
