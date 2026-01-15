@@ -7,7 +7,7 @@ spec:
   chart:
       sourceRef:
         kind: OCIRepository
-        name: cert-manager
+        name: cert-manager-repo
   values:
     crds:
       enabled: true
