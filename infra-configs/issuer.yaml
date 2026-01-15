@@ -4,8 +4,6 @@ metadata:
   name: cf-issuer
   namespace: cert-manager
 spec:
-  dependsOn:
-    - name: cert-manager
   acme:
     solvers:
     - dns01:
