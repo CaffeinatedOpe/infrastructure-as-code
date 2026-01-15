@@ -4,11 +4,19 @@ metadata:
   name: cert-manager-deployment
   namespace: cert-manager
 spec:
+  interval: 12h
+  install:
+    strategy:
+      name: RetryOnFailure
+      retryInterval: 2m
+  upgrade:
+    strategy:
+      name: RetryOnFailure
+      retryInterval: 3m
   chartRef:
     kind: OCIRepository
-    name: cert-manager-repo
+    name: cert-manager
   values:
     crds:
       enabled: true
       keep: false
-  interval: 1m0s
