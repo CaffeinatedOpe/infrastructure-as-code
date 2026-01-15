@@ -6,10 +6,12 @@ metadata:
 spec:
   acme:
     email: user@example.com
+    privateKeySecretRef:
+      name: example-issuer-account-key
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     solvers:
     - selector:
-        dnsZones:
+        dnsNames:
         - 'caffeinatedope.net' 
         - '*.caffeinatedope.net'
       dns01:
