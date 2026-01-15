@@ -8,10 +8,10 @@ spec:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     solvers:
     - selctor:
-      dnsZones:
+        dnsZones:
         - 'caffeinatedope.net' 
         - '*.caffeinatedope.net'
-    - dns01:
+      dns01:
         cloudflare:
           apiTokenSecretRef:
             name: cloudflare-api-token-secret
