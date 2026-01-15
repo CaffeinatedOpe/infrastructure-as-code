@@ -9,6 +9,6 @@ spec:
   timeout: 5m
   sourceRef:
     kind: ExternalArtifact
-    name: infra-configs
+    name: infrastructure
   prune: true
   wait: true
