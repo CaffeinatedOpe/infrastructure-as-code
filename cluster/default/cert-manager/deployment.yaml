@@ -5,7 +5,7 @@ metadata:
   namespace: cert-manager
 spec:
   chart:
-      sourceRef:
+      chartRef:
         kind: OCIRepository
         name: cert-manager-repo
   values:
