@@ -1,5 +1,5 @@
 apiVersion: networking.k8s.io/v1
-kind: Ingress
+kind: IngressRoute
 metadata:
   annotations:
     # add an annotation indicating the issuer to use.
@@ -7,19 +7,14 @@ metadata:
   name: httpbin-ingress
   namespace: default
 spec:
-  rules:
-  - host: caffeinatedope.net
-    http:
-      paths:
-      - pathType: Prefix
-        path: /
-        backend:
-          service:
-            name: httpbin-service
-            port:
-              number: 80
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host('caffeinatedope.net')
+    kind: rules
+    services:
+    - name: httpbin-service
+      port: 80
   tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
   - hosts:
-    - caffeinatedope.net
-    - www.caffeinatedope.net
     secretName: central-cert # < cert-manager will store the created certificate in this secret.
