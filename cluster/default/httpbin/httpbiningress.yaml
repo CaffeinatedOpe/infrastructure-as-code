@@ -11,7 +11,7 @@ spec:
   - websecure
   routes:
   - match: Host('caffeinatedope.net')
-    kind: rules
+    kind: Rule
     services:
     - name: httpbin-service
       port: 80
