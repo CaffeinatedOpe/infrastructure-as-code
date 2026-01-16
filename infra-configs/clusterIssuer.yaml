@@ -16,6 +16,7 @@ spec:
         - '*.caffeinatedope.net'
       dns01:
         cloudflare:
+          email: arfiedler1114@gmail.com
           apiTokenSecretRef:
             name: cloudflare-api-token-secret
             key: api-token
