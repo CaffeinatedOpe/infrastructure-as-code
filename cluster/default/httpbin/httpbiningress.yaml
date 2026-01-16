@@ -1,16 +1,13 @@
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:
-  annotations:
-    # add an annotation indicating the issuer to use.
-    cert-manager.io/cluster-issuer: cf-cluster-issuer
   name: httpbin-ingress
   namespace: default
 spec:
   entryPoints:
   - websecure
   routes:
-  - match: Host('caffeinatedope.net')
+  - match: Host(`caffeinatedope.net`)
     kind: Rule
     services:
     - name: httpbin-service
