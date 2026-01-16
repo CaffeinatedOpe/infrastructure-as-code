@@ -12,5 +12,10 @@ spec:
     services:
     - name: httpbin-service
       port: 80
+  - match: Host(`www.caffeinatedope.net`)
+    kind: Rule
+    services:
+    - name: httpbin-service
+      port: 80
   tls: 
     secretName: central-cert

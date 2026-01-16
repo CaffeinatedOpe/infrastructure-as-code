@@ -2,5 +2,4 @@
 - migrate arr stack
 - migrate jellyfin, other hosting
 - add improved storage method (longhorn?)
-- configure certs
 - implement ci/cd for website hosting
