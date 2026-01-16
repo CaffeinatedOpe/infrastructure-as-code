@@ -21,4 +21,5 @@ spec:
   tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
   - hosts:
     - caffeinatedope.net
+    - www.caffeinatedope.net
     secretName: central-cert # < cert-manager will store the created certificate in this secret.
