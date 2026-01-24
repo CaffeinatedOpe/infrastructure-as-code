@@ -15,4 +15,4 @@ spec:
       retryInterval: 3m
   chartRef:
     kind: HelmChart
-    name: jenkins
+    name: jenkinsci/jenkins
