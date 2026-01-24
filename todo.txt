@@ -3,3 +3,4 @@
 - migrate jellyfin, other hosting
 - add improved storage method (longhorn?)
 - implement ci/cd for website hosting
+- local container image registry?
