@@ -1,7 +1,7 @@
 kind: Kustomization
 namespace: flux-system
 resources:
-  - helm_release.yaml
+  - deployment.yaml
 configMapGenerator:
   - name: jenkins-config
     files:
