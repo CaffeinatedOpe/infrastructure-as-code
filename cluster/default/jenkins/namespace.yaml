@@ -1,5 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: jenkins
-  toolkit.fluxcd.io/tenant: sre-team  
