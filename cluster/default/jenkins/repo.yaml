@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
-  name: jenkins
+  name: jenkinsci
   namespace: jenkins
 spec:
   interval: 24h
