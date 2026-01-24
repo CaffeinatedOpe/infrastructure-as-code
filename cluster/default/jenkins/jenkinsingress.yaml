@@ -13,4 +13,4 @@ spec:
     - name: jenkins-deployment
       port: 8080
   tls: 
-    secretName: central-cert
+    secretName: wildcard-cert
