@@ -14,5 +14,5 @@ spec:
       name: RetryOnFailure
       retryInterval: 3m
   chartRef:
-    kind: HelmRepository
+    kind: HelmChart
     name: jenkins
