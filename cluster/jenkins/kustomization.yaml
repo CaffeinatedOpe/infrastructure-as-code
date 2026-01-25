@@ -9,6 +9,6 @@ resources:
 configMapGenerator:
   - name: jenkins-config
     files:
-      - values.yaml=values.yaml
+      - values.yaml=jenkins_values.yaml
 configurations:
   - kustomizeconfig.yaml
