@@ -211,10 +211,10 @@ controller:
   # For minikube, set this to NodePort, elsewhere uses LoadBalancer
   # Use ClusterIP if your setup includes ingress controller
   # -- k8s service type
-  serviceType: ClusterIP
+  serviceType: LoadBalancer
 
   # -- k8s service clusterIP. Only used if serviceType is ClusterIP
-  clusterIp:
+  loadBalancer:
   # -- k8s service port
   servicePort: 8080
   # -- k8s target port
@@ -680,7 +680,7 @@ controller:
 
   ingress:
     # -- Enables ingress
-    enabled: true
+    enabled: false
 
     # Override for the default paths that map requests to the backend
     # -- Override for the default Ingress paths
@@ -904,7 +904,7 @@ controller:
 
 agent:
   # -- Enable Kubernetes plugin jnlp-agent podTemplate
-  enabled: true
+  enabled: false
   # -- The name of the pod template to use for providing default values
   defaultsProviderTemplate: ""
 
