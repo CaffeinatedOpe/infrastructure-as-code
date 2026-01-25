@@ -47,3 +47,18 @@ spec:
           requests:
             cpu: "1"
             memory: 500Mi
+    basePlugins:
+    - name: kubernetes
+      version: "*"
+    - name: workflow-job
+      version: "*"
+    - name: workflow-aggregator
+      version: "*"
+    - name: git
+      version: "*"
+    - name: job-dsl
+      version: "*"
+    - name: configuration-as-code
+      version: "*"
+    - name: kubernetes-credentials-provider
+      version: "*"
