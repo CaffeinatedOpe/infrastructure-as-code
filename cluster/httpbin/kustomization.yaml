@@ -1,0 +1,6 @@
+kind: Kustomization
+namespace: flux-system
+resources:
+  - httpbin.yaml
+  - httpbinsvc.yaml
+  - httpbiningress.yaml

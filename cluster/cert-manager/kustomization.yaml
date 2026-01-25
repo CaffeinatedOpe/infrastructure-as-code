@@ -1,0 +1,9 @@
+kind: Kustomization
+namespace: flux-system
+resources:
+  - namespace.yaml
+  - repo.yaml
+  - deployment.yaml
+  - clusterIssuer.yaml
+  - issuer.yaml
+  - certs.yaml
