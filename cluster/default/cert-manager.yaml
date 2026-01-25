@@ -20,7 +20,6 @@ metadata:
 spec:
   dependsOn:
     - name: cert-manager
-  wait: true
   interval: 5m
   path: ./cluster/cert-manager/certs
   prune: true
