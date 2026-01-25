@@ -4,6 +4,3 @@ nameReference:
   fieldSpecs:
   - path: spec/valuesFrom/name
     kind: HelmRelease
-  metadata:
-    labels:
-      reconcile.fluxcd.io/watch: Enabled
