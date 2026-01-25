@@ -2,25 +2,30 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: cert-manager-controller
+  name: cert-manager
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 5m
   path: ./cluster/cert-manager/controller
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: cert-manager
+      namespace: cert-manager
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: cert-manager-certs
+  name: certs
   namespace: flux-system
 spec:
   dependsOn:
-    - name: cert-manager-controller
-  interval: 10m0s
+    - name: cert-manager
+  interval: 5m
   path: ./cluster/cert-manager/certs
   prune: true
   sourceRef:
