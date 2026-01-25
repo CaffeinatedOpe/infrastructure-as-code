@@ -1,5 +1,5 @@
 kind: Kustomization
-namespace: flux-system
+namespace: cert-manager
 resources:
   - namespace.yaml
   - repo.yaml
