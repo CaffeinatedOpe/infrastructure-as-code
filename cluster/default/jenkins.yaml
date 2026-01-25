@@ -4,7 +4,7 @@ metadata:
   name: jenkins
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 5m
   path: ./cluster/jenkins
   prune: true
   sourceRef:
