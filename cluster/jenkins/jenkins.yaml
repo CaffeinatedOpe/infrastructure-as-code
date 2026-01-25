@@ -49,16 +49,18 @@ spec:
             memory: 500Mi
     basePlugins:
     - name: kubernetes
-      version: "*"
+      version: "latest"
     - name: workflow-job
-      version: "*"
+      version: "latest"
     - name: workflow-aggregator
-      version: "*"
+      version: "latest"
     - name: git
-      version: "*"
+      version: "latest"
     - name: job-dsl
-      version: "*"
+      version: "latest"
     - name: configuration-as-code
-      version: "*"
+      version: "latest"
     - name: kubernetes-credentials-provider
-      version: "*"
+      version: "latest"
+    - name: simple-theme-plugin
+      version: "latest"
