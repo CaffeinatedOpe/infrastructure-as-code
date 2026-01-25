@@ -4,6 +4,3 @@ namespace: cert-manager
 resources:
   - namespace.yaml
   - deployment.yaml
-  - clusterIssuer.yaml
-  - issuer.yaml
-  - certs.yaml
