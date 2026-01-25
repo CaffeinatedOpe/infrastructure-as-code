@@ -37,6 +37,6 @@ spec:
       name: RetryOnFailure
       retryInterval: 3m
   valuesFrom:
-  - kind: ConfigMap
-    name: jenkins-config
+    - kind: ConfigMap
+      name: jenkins-config
   
