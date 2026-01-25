@@ -93,7 +93,7 @@ controller:
     # -- The name of an existing secret containing the admin credentials
     existingSecret: ""
   # -- Email address for the administrator of the Jenkins instance
-  jenkinsAdminEmail:
+  jenkinsAdminEmail: "arfiedler1114@gmail.com"
 
   # This value should not be changed unless you use your custom image of jenkins or any derived from.
   # If you want to use Cloudbees Jenkins Distribution docker, you should set jenkinsHome: "/var/cloudbees-jenkins-distribution"
@@ -680,7 +680,7 @@ controller:
 
   ingress:
     # -- Enables ingress
-    enabled: false
+    enabled: true
 
     # Override for the default paths that map requests to the backend
     # -- Override for the default Ingress paths
@@ -719,9 +719,9 @@ controller:
     resourceRootUrl:
     # -- Ingress TLS configuration
     tls: []
-    # - secretName: jenkins.cluster.local
-    #   hosts:
-    #     - jenkins.cluster.local
+    - secretName: wildcard-cert
+      hosts:
+        - jenkins.caffeinatedope.net
 
   # often you want to have your controller all locked down and private,
   # but you still want to get webhooks from your SCM
