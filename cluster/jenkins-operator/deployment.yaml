@@ -34,3 +34,6 @@ spec:
     disableWait: true
   upgrade:
     disableWait: true
+  values:
+    jenkins:
+      namespace: jenkins
