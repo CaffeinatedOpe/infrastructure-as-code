@@ -1,14 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: jenkins
+metadata:
+  labels:
+    reconcile.fluxcd.io/watch: Enabled
 resources:
   - deployment.yaml
 configMapGenerator:
   - name: jenkins-config
     files:
       - values.yaml=values.yaml
-    metadata:
-      labels:
-        reconcile.fluxcd.io/watch: Enabled
 configurations:
   - kustomizeconfig.yaml
