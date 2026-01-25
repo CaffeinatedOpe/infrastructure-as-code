@@ -22,18 +22,15 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: jenkins-operator/jenkins-operator
-      version: '0.8.*'
+      chart: jenkins-operator
+      version: 0.8.*
       sourceRef:
         kind: HelmRepository
-        name: jenkins-operator/jenkins-operator
+        name: jenkins-operator
       interval: 5m
   releaseName: jenkins-operator
+  targetNamespace: jenkins
   install:
-    strategy:
-      name: RetryOnFailure
-      retryInterval: 2m
+    disableWait: true
   upgrade:
-    strategy:
-      name: RetryOnFailure
-      retryInterval: 3m
+    disableWait: true
