@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: cert-manager
 resources:
   - namespace.yaml
-  - repo.yaml
   - deployment.yaml
   - clusterIssuer.yaml
   - issuer.yaml
