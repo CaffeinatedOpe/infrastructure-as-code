@@ -23,9 +23,8 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: jenkins-operator
+      chart: jenkins-operator/jenkins-operator
       version: '0.8.*'
       sourceRef:
         kind: HelmRepository
         name: jenkins-operator/jenkins-operator
-        namespace: jenkins
