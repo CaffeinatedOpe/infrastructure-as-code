@@ -10,10 +10,10 @@
 nameOverride:
 # -- Override the full resource names
 # @default -- `jenkins-(release-name)` or `jenkins` if the release-name is `jenkins`
-fullnameOverride:
+fullnameOverride:"jenkins-test"
 # -- Override the deployment namespace
 # @default -- `Release.Namespace`
-namespaceOverride:
+namespaceOverride: "jenkins"
 
 # For FQDN resolving of the controller service. Change this value to match your existing configuration.
 # ref: https://github.com/kubernetes/dns/blob/master/docs/specification.md
