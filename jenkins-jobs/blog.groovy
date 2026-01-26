@@ -19,7 +19,7 @@ pipelineJob('blog') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/CaffeinatedOpe/infrastructure-as-code')
+                        url('https://github.com/CaffeinatedOpe/blog')
                     }
                     branches('*/master')
                 }
