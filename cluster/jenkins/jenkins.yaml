@@ -64,8 +64,8 @@ spec:
       version: "latest"
       
   seedJobs:
-    - id: blog
-      targets: "Jenkinsfile"
-      description: "blog repository"
+    - id: iac-repo
+      targets: "jenkins-jobs/*.groovy"
+      description: "Infrastructure As Code repo"
       repositoryBranch: master
-      repositoryUrl: https://github.com/CaffeinatedOpe/blog
+      repositoryUrl: https://github.com/CaffeinatedOpe/infrastructure-as-code
