@@ -16,6 +16,6 @@ spec:
       containers:
       - name: blog
         image: ghcr.io/caffeinatedope/blog:latest
-        imagePullPolicy: always
+        imagePullPolicy: Always
         ports:
         - containerPort: 4321
