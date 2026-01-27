@@ -2,8 +2,8 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: blog
-  namespace: flux-system
+  name: blog-repo
+  namespace: blog
 spec:
   image: ghcr.io/caffeinatedope/blog
   interval: 5m
@@ -11,11 +11,11 @@ spec:
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:
-  name: blog
-  namespace: flux-system
+  name: blog-imagepolicy
+  namespace: blog
 spec:
   imageRepositoryRef:
-    name: blog
+    name: blog-repo
   filterTags:
     pattern: '^latest$'
   policy:
@@ -26,8 +26,8 @@ spec:
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageUpdateAutomation
 metadata:
-  name: flux-system
-  namespace: flux-system
+  name: blog-updater
+  namespace: blog
 spec:
   interval: 1m
   sourceRef:
