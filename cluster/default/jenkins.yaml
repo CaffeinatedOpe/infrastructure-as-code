@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: ./cluster/jenkins-operator
+  path: ./cluster/jenkins/operator
   prune: true
   sourceRef:
     kind: GitRepository
@@ -21,7 +21,7 @@ spec:
   dependsOn:
     - name: jenkins-operator
   interval: 5m
-  path: ./cluster/jenkins
+  path: ./cluster/jenkins/app
   prune: true
   sourceRef:
     kind: GitRepository
