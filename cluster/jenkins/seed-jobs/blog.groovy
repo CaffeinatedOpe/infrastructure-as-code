@@ -8,16 +8,6 @@ pipelineJob('blog') {
         daysToKeep(90)
     }
 
-		properties {
-        pipelineTriggers {
-            triggers {
-                cron {
-                    spec('@daily')
-                }
-            }
-        }
-    }
-
     configure { project ->
         project / 'properties' / 'org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty' {
             hint('PERFORMANCE_OPTIMIZED')
