@@ -1,11 +1,11 @@
 #!/usr/bin/env groovy
 
 pipelineJob('blog') {
-    displayName('builds for my blog')
+    displayName('blog site')
 
     logRotator {
-        numToKeep(10)
-        daysToKeep(30)
+        numToKeep(100)
+        daysToKeep(90)
     }
 
     configure { project ->
