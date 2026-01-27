@@ -4,7 +4,7 @@ metadata:
   name: blog
   namespace: flux-system
 spec:
-  interval: 2m
+  interval: 5m
   path: ./cluster/blog
   prune: true
   sourceRef:
