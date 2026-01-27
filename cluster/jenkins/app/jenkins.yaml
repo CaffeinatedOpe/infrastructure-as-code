@@ -64,8 +64,8 @@ spec:
       version: "latest"
       
   seedJobs:
-    - id: iac-repo
+    - id: blog
       targets: "ci/Jenkinsfile"
-      description: "Infrastructure As Code repo"
+      description: "blog"
       repositoryBranch: master
       repositoryUrl: https://github.com/CaffeinatedOpe/blog
