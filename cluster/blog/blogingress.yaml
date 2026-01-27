@@ -1,16 +1,16 @@
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:
-  name: httpbin-ingress
+  name: blog-ingress
   namespace: default
 spec:
   entryPoints:
   - websecure
   routes:
-  - match: Host(`httpbin.caffeinatedope.net`)
+  - match: Host(`caffeinatedope.net`) || Host(`www.caffeinatedope.net`)
     kind: Rule
     services:
-    - name: httpbin-service
-      port: 80
+    - name: blog-service
+      port: 4321
   tls: 
-    secretName: wildcard-cert
+    secretName: central-cert
