@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: blog
-        image: ghcr.io/caffeinatedope/blog:latest
+        image: ghcr.io/caffeinatedope/blog:latest # {"$imagepolicy": "flux-system:blog"}
         imagePullPolicy: Always
         ports:
         - containerPort: 4321

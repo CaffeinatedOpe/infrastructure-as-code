@@ -5,3 +5,4 @@ resources:
   - blog.yaml
   - blogsvc.yaml
   - blogingress.yaml
+  - blog-imagerepo.yaml
