@@ -8,6 +8,16 @@ pipelineJob('blog') {
         daysToKeep(90)
     }
 
+		properties {
+        pipelineTriggers {
+            triggers {
+                pollSCM {
+    							scmpoll_spec('H/5 * * * *')
+								} 
+            }
+        }
+    }
+
     configure { project ->
         project / 'properties' / 'org.jenkinsci.plugins.workflow.job.properties.DurabilityHintJobProperty' {
             hint('PERFORMANCE_OPTIMIZED')
