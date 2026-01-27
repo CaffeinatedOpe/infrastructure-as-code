@@ -24,7 +24,7 @@ pipelineJob('blog') {
                     branches('*/master')
                 }
             }
-            scriptPath('Jenkinsfile')
+            scriptPath('ci/Jenkinsfile')
         }
     }
 }
