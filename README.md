@@ -28,7 +28,7 @@ Now for the part you've all been waiting for: all the nonsense I run on my lab t
 	* [cloudflared](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/): network traffic tunneling
 	* [Traefik](https://traefik.io/): ingress management and routing
 	* [cert-manager](https://cert-manager.io/): certificate requests, ssl encryption
-	* [Jenkins Operator](https://jenkinsci.github.io/kubernetes-operator/) and [Jenkins](nttps://jenkins.io): automatically builds and deploys my blog when a change is made in the git repo
+	* [Jenkins Operator](https://jenkinsci.github.io/kubernetes-operator/) and [Jenkins](https://jenkins.io): automatically builds and deploys my blog when a change is made in the git repo
 * Public Facing
 	* [My Blog!](https://caffeinatedope.net)
 	* [httpbin](https://httpbin.org/): test site, for testing connectivity and routing
