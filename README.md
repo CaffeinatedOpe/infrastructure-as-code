@@ -24,11 +24,13 @@ Now that the thinking rocks are explained, onto the fun part: the software side,
 ## The Services
 Now for the part you've all been waiting for: all the nonsense I run on my lab that I really don't need to.
 * Management
-	* [FluxCD](https://fluxcd.io): cluster management, deployment config updates.
+	* [FluxCD](https://fluxcd.io): cluster management, deployment config updates, container version auto-updates
 	* [cloudflared](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/): network traffic tunneling
 	* [Traefik](https://traefik.io/): ingress management and routing
 	* [cert-manager](https://cert-manager.io/): certificate requests, ssl encryption
+	* [Jenkins Operator](https://jenkinsci.github.io/kubernetes-operator/) and [Jenkins](nttps://jenkins.io): automatically builds and deploys my blog when a change is made in the git repo
 * Public Facing
+	* [My Blog!](https://caffeinatedope.net)
 	* [httpbin](https://httpbin.org/): test site, for testing connectivity and routing
 * Fun Stuff
 	* none... i'll get to it eventually
@@ -40,5 +42,5 @@ I've gotten a lot done, but there's so much more to do. Here's the ones I've rem
 - figure out local dns/split tunneling, so not everything gets published to the internet, but i still have access
 - tailscale. just tailscale. i've got headscale running on my nas (also runs everything else of mine, but not documented), and have access to it through my nas's exit node, but I i should find a better way to integrate it with the cluster.
 - logging, i've heard grafana is cool, but haven't set it up yet
-- blog hosting... this should probably be at the top of the list, but yknow. I need to set up not only hosting for the blog, but also set up a ci/cd pipeline to automatically update it whenever i push a new version.
+- ~~blog hosting... this should probably be at the top of the list, but yknow. I need to set up not only hosting for the blog, but also set up a ci/cd pipeline to automatically update it whenever i push a new version.~~ Done!
 - github alternative? there's the issue of, well, issues when it comes to git hosting. either I open up accounts to anyone, or nobody can create issues or pull requests. i'll look into it eventually, probably while I've got more important things to be working on.
