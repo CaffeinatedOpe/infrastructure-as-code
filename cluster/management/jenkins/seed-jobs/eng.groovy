@@ -29,7 +29,7 @@ pipelineJob('eng') {
             scm {
                 git {
                     remote {
-                        url('https://github.com/CaffeinatedOpe/engl-proj')
+                        url('https://codeberg.org/CaffeinatedOpe/engl-proj')
                     }
                     branches('*/master')
                 }
