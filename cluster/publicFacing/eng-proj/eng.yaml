@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: eng
-        image: codeberg.org/caffeinatedope/eng:latest@sha256:aa618129b97a5f6d76b07c17ae1de9fca42a7b35b0cfe6f9552c10b1f267fd04 # {"$imagepolicy": "blog:blog-imagepolicy"}
+        image: codeberg.org/caffeinatedope/eng:latest@sha256:d58a8d93fdd3da56d3e59fb55a16b879187cc642f90c8aea82ec79fe794fe80d # {"$imagepolicy": "eng:eng-imagepolicy"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 4321
