@@ -12,6 +12,6 @@ spec:
     kind: Rule
     services:
     - name: eng-service
-      port: 4321
+      port: 4322
   tls: 
     secretName: eng-cert
