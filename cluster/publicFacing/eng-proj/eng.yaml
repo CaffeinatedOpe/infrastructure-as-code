@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eng-deployment
+  namespace: eng
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eng
+  template:
+    metadata:
+      labels:
+        app: eng
+    spec:
+      containers:
+      - name: eng
+        image: codeberg.org/caffeinatedope/eng:latest@sha256:aa618129b97a5f6d76b07c17ae1de9fca42a7b35b0cfe6f9552c10b1f267fd04 # {"$imagepolicy": "blog:blog-imagepolicy"}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 4321

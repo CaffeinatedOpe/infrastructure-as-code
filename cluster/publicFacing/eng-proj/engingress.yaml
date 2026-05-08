@@ -1,0 +1,17 @@
+---
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: eng-ingress
+  namespace: eng
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - match: Host(`6hr.caffeinatedope.net`)
+    kind: Rule
+    services:
+    - name: eng-service
+      port: 4321
+  tls: 
+    secretName: eng-cert
