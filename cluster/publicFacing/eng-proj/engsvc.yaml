@@ -10,4 +10,4 @@ spec:
     app: eng
   ports:
   - port: 4322
-    targetPort: 4321
+    targetPort: 4322

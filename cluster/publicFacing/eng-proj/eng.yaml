@@ -18,4 +18,4 @@ spec:
         image: codeberg.org/caffeinatedope/eng-proj:latest@sha256:078c53bb915e41c2b29d0d26c6e6dabb349e24639f6e3e187f3cb7412d5db79b # {"$imagepolicy": "eng:eng-imagepolicy"}
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 4321
+        - containerPort: 4322
